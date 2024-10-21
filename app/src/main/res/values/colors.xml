@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="button">#6750a4</color>
-    <color name="purple_text">#957DAD</color>
-    <color name="pink">#D291BC</color>
-    <color name="hot_pink">#CA63A7</color>
-</resources>
