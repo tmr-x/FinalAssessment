@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DashboardFragment">
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="108dp"
+        android:text=""
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="#303F9F"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name: " />
+
+    <TextView
+        android:id="@+id/familyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text=""
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="#303F9F"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/nameText"
+        app:layout_constraintTop_toTopOf="@id/nameText"
+        tools:text="Family: " />
+
+    <TextView
+        android:id="@+id/branchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text=""
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="#303F9F"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/familyText"
+        app:layout_constraintTop_toTopOf="@id/familyText"
+        tools:text="Branch: " />
+
+    <TextView
+        android:id="@+id/speakersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text=""
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="#303F9F"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/branchText"
+        app:layout_constraintTop_toTopOf="@id/branchText"
+        tools:text="Speaker Number: " />
+
+    <TextView
+        android:id="@+id/writingSystemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="#303F9F"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speakersText"
+        tools:text="Writing System: " />
+
+    <TextView
+        android:id="@+id/officialInText"
+        android:layout_width="209dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="#303F9F"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/writingSystemText"
+        tools:text="Official Language Of: " />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="217dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="28dp"
+        android:text=""
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="#303F9F"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officialInText"
+        tools:text="Description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
