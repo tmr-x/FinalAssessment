@@ -3,32 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment"> <!--The starting fragment that is shown when the app opens-->
+    app:startDestination="@id/homeScreenFragment">
 
-    <!--LoginFragment -->
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.vu.finalassessment.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <!--Navigates from the LoginFragment to the HomeScreenFragment -->
-        <action
-            android:id="@+id/action_loginFragment_to_homeScreenFragment"
-            app:destination="@id/homeScreenFragment" />
-    </fragment>
-
-    <!--HomeScreenFragment -->
     <fragment
         android:id="@+id/homeScreenFragment"
         android:name="com.vu.finalassessment.home.ui.HomeScreenFragment"
         android:label="fragment_home_screen"
         tools:layout="@layout/fragment_home_screen">
-        <!--Navigates from the HomeScreenFragment to the DashboardFragment -->
         <action
             android:id="@+id/actionHomeScreenFragmentToDashboardFragment"
             app:destination="@id/dashboardFragment">
-
-            <!--Arguments that are passed from the HomeScreenFragment to the DashboardFragment-->
             <argument
                 android:name="name"
                 app:argType="string" />
@@ -53,7 +37,6 @@
         </action>
     </fragment>
 
-    <!--DashboardFragment -->
     <fragment
         android:id="@+id/dashboardFragment"
         android:name="com.vu.finalassessment.DashboardFragment"
